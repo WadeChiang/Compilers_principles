@@ -1,0 +1,1 @@
+/bin/g++-9  -g   CMakeFiles/LR1.dir/src/grammar.cc.o CMakeFiles/LR1.dir/src/parse.cc.o  -o LR1 

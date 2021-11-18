@@ -1,0 +1,90 @@
+Line 1:
+[Reserved Word: int]
+[Identifier, Value: printf, Sequence: 0]
+[Punctuator: (]
+[Reserved Word: const]
+[Reserved Word: char]
+[Punctuator: *]
+[Punctuator: ,]
+[Punctuator: ...]
+[Punctuator: )]
+[Punctuator: ;]
+Line 2:
+Line 3:
+Line 4:
+[Reserved Word: int]
+[Identifier, Value: main, Sequence: 1]
+[Punctuator: (]
+[Reserved Word: void]
+[Punctuator: )]
+[Punctuator: {]
+Line 5:
+[Reserved Word: int]
+[Identifier, Value: _ident32, Sequence: 2]
+[Punctuator: =]
+[Integer Constant (Hexdecimal), value: 0x0114514]
+[Punctuator: ;]
+Line 6:
+[Reserved Word: char]
+[Punctuator: *]
+[Identifier, Value: s, Sequence: 3]
+[Punctuator: =]
+[String Literals: "\""]
+[Punctuator: ;]
+Line 7:
+[Reserved Word: float]
+[Identifier, Value: a, Sequence: 4]
+[Punctuator: =]
+[Float Constant (Decimal), value: 1.251e+3l]
+[Punctuator: ;]
+Line 8:
+[Reserved Word: float]
+[Identifier, Value: k, Sequence: 5]
+[Punctuator: =]
+[Float Constant (Decimal), value: 123.f]
+[Punctuator: ;]
+Line 9:
+[Reserved Word: int]
+[Identifier, Value: i, Sequence: 6]
+[Punctuator: =]
+[Integer Constant (Decimal), value: 100lu]
+[Punctuator: ;]
+Line 10:
+[Reserved Word: int]
+[Identifier, Value: ib, Sequence: 7]
+[Punctuator: =]
+[Integer Constant (Octal), value: 0122]
+[Punctuator: ;]
+Line 11:
+[Identifier, Value: i, Sequence: 6]
+[Punctuator: <<=]
+[Integer Constant (Decimal), value: 2]
+[Punctuator: ;]
+Line 12:
+Line 13:
+Line 14:
+Line 15:
+[Identifier, Value: printf, Sequence: 0]
+[Punctuator: (]
+[String Literals: "%lu\n"]
+[Punctuator: ,]
+[Identifier, Value: i, Sequence: 6]
+[Punctuator: )]
+[Punctuator: ;]
+Line 16:
+[Reserved Word: return]
+[Integer Constant (Decimal), value: 0]
+[Punctuator: ;]
+Line 17:
+[Punctuator: }]
+
+
+Total:
+Lines: 17
+Charators: 298
+Identifiers: 11
+Reserved Words: 12
+Numeric Constants: 7
+Charactor Constants: 0
+String Literals: 2
+Punctuators: 30

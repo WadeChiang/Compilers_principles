@@ -1,0 +1,1 @@
+/bin/gcc-9 -g   CMakeFiles/LexAnalyser.dir/src/HashMap.c.o CMakeFiles/LexAnalyser.dir/src/LexAnalyser.c.o CMakeFiles/LexAnalyser.dir/src/List.c.o  -o LexAnalyser 

@@ -1,0 +1,17 @@
+int printf(const char *, ...);
+
+// Line comment
+int main(void) {
+    int _ident32 = 0x0114514;
+    char *s = "\"";
+    float a = 1.251e+3l;
+    float k = 123.f;
+    int i = 100lu;
+    int ib = 0122;
+    i <<= 2;
+    /* This
+     * is
+     * a block comment */
+    printf("%lu\n", i);
+    return 0;
+}

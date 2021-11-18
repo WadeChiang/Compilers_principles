@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/entropy/compilers/lab2/lr_analyze/build",
+  "command": "/bin/g++-9    -g   -std=gnu++11 -o CMakeFiles/LR1.dir/src/grammar.cc.o -c /home/entropy/compilers/lab2/lr_analyze/src/grammar.cc",
+  "file": "/home/entropy/compilers/lab2/lr_analyze/src/grammar.cc"
+},
+{
+  "directory": "/home/entropy/compilers/lab2/lr_analyze/build",
+  "command": "/bin/g++-9    -g   -std=gnu++11 -o CMakeFiles/LR1.dir/src/parse.cc.o -c /home/entropy/compilers/lab2/lr_analyze/src/parse.cc",
+  "file": "/home/entropy/compilers/lab2/lr_analyze/src/parse.cc"
+}
+]

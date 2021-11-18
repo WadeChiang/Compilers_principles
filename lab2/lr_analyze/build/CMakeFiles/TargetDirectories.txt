@@ -1,0 +1,3 @@
+/home/entropy/compilers/lab2/lr_analyze/build/CMakeFiles/rebuild_cache.dir
+/home/entropy/compilers/lab2/lr_analyze/build/CMakeFiles/edit_cache.dir
+/home/entropy/compilers/lab2/lr_analyze/build/CMakeFiles/LR1.dir

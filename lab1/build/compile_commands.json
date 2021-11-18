@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/entropy/compilers/lab1/build",
+  "command": "/bin/gcc-9  -I/home/entropy/compilers/lab1/include  -g   -o CMakeFiles/LexAnalyser.dir/src/HashMap.c.o   -c /home/entropy/compilers/lab1/src/HashMap.c",
+  "file": "/home/entropy/compilers/lab1/src/HashMap.c"
+},
+{
+  "directory": "/home/entropy/compilers/lab1/build",
+  "command": "/bin/gcc-9  -I/home/entropy/compilers/lab1/include  -g   -o CMakeFiles/LexAnalyser.dir/src/LexAnalyser.c.o   -c /home/entropy/compilers/lab1/src/LexAnalyser.c",
+  "file": "/home/entropy/compilers/lab1/src/LexAnalyser.c"
+},
+{
+  "directory": "/home/entropy/compilers/lab1/build",
+  "command": "/bin/gcc-9  -I/home/entropy/compilers/lab1/include  -g   -o CMakeFiles/LexAnalyser.dir/src/List.c.o   -c /home/entropy/compilers/lab1/src/List.c",
+  "file": "/home/entropy/compilers/lab1/src/List.c"
+}
+]

@@ -1,0 +1,1 @@
+/bin/g++-9  -g   CMakeFiles/LL1_Analyze.dir/src/grammar.cc.o CMakeFiles/LL1_Analyze.dir/src/readin.cc.o  -o LL1_Analyze 

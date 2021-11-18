@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/HashMap.h
+
+../include/List.h
+
+/home/entropy/compilers/lab1/src/LexAnalyser.c
+HashMap.h
+/home/entropy/compilers/lab1/src/HashMap.h
+List.h
+/home/entropy/compilers/lab1/src/List.h
+ctype.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+

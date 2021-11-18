@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/entropy/compilers/lab2/ll_analyze/src/grammar.cc
+grammar.h
+/home/entropy/compilers/lab2/ll_analyze/src/grammar.h
+
+/home/entropy/compilers/lab2/ll_analyze/src/grammar.h
+map
+-
+set
+-
+string
+-
+vector
+-
+
+/home/entropy/compilers/lab2/ll_analyze/src/readin.cc
+grammar.h
+/home/entropy/compilers/lab2/ll_analyze/src/grammar.h
+fstream
+-
+iostream
+-
+
