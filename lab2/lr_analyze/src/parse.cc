@@ -34,13 +34,41 @@ class Parser {
         auto ip = 0, top = 0;
         std::vector<std::pair<int, std::string>> stk(1 << 10);
         stk[0] = {0, ""};
+        bool acc_flag = false;
+
+        std::string analysis_action;
+        std::cout << "|Stack|Input|Analysis Action|" << std::endl
+                  << "|-----|-----|------|" << std::endl;
+
+        auto print = [&top, &stk, &phrase, &ip, &analysis_action]() {
+            std::cout << "|";
+            for (int i = 0; i <= top; ++i)
+            {
+                std::cout << "[" << stk[i].first << ", " << stk[i].second
+                          << "]";
+                if (i != top)
+                {
+                    std::cout << ", ";
+                }
+            }
+            std::cout << "|";
+            for (int i = ip; i < phrase.size(); i++)
+            {
+                std::cout << phrase[i];
+            }
+            std::cout << "|" << analysis_action << "|" << std::endl;
+        };
+
         do
         {
+            analysis_action = "";
             if (gm->action.at({stk[top].first, phrase[ip]}).action_type == "S")
             {
-                auto p = std::make_pair(
-                    (gm->action).at({stk[top].first, phrase[ip]}).s_target,
-                    phrase[ip]);
+                auto s_target =
+                    (gm->action).at({stk[top].first, phrase[ip]}).s_target;
+                analysis_action = "Shift " + std::to_string(s_target);
+                print();
+                auto p = std::make_pair(s_target, phrase[ip]);
                 top++;
                 stk[top].first = p.first;
                 stk[top].second = p.second;
@@ -51,6 +79,13 @@ class Parser {
             {
                 auto fml = gm->action.at({stk[top].first, phrase[ip]}).fml;
                 auto len = fml.second.size();
+                analysis_action = "Reduce by " + fml.first + "->";
+                for (int i = 0; i < len; i++)
+                {
+                    analysis_action += fml.second[i];
+                }
+                print();
+
                 for (auto copy = top; copy - top < len; top--)
                 {
                     stk[top] = {};
@@ -61,8 +96,13 @@ class Parser {
             }
             else if (gm->action.at({stk[top].first, phrase[ip]}).action_type ==
                      "ACC")
-            { return; }
-        } while (true);
+            {
+                analysis_action = "ACC";
+                print();
+                acc_flag = true;
+            }
+
+        } while (!acc_flag);
     }
 };
 
